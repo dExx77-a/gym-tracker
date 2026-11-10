@@ -1,0 +1,5 @@
+# Not part of the app: local tool settings and Claude Code program/config files
+.claude/
+bin/
+config/
+projects/
