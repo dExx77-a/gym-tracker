@@ -13,16 +13,24 @@ Clearing browser data, or opening the app in a different browser, means you won'
 - **Me → Export** downloads `gym-tracker-backup-YYYY-MM-DD.json`. Do this weekly and keep the file in OneDrive or Google Drive.
 - **Me → Import** loads a backup file. It *replaces* all current data, so you're asked to confirm first.
 
-## Use it on your iPhone later
-Safari on iPhone can't run an HTML file straight from the Files app, so put the folder online once (free):
+## Use it on your iPhone
+The app is online (free, via GitHub Pages): **https://dexx77-a.github.io/gym-tracker/**
 
-1. **Netlify Drop**: go to app.netlify.com/drop and drag this whole folder onto the page. You get a link.
-   (Or: push the folder to a GitHub repo and turn on **GitHub Pages**.)
-2. Open the link in **Safari** on your iPhone → Share → **Add to Home Screen**. It now opens like an app.
-3. Move your data across: **Export** on the PC → save the file to iCloud Drive/OneDrive → on the iPhone, **Me → Import**.
+1. Open that link in **Safari** on your iPhone (must be Safari, not Chrome).
+2. Tap **Share** (square with arrow) → **Add to Home Screen** → **Add**. You get the purple dumbbell icon.
+3. Open it from the icon: it runs full-screen like an app, and works offline after the first load.
 
-Each device keeps its own copy of the data. Pick one main device (your phone, since you log at the gym)
-and use Export/Import whenever you switch.
+Each device keeps its own copy of the data. Your phone is the main one (you log at the gym).
+To move data: **Me → Export** on one device, then **Me → Import** the file on the other.
+
+## Updating the online version
+After changing files on the PC, run in this folder:
+```
+git add -A
+git commit -m "describe the change"
+git push
+```
+GitHub Pages updates the site in about a minute. Your logged data on the phone is not affected.
 
 ## How the rules work
 | Feature | Rule |
